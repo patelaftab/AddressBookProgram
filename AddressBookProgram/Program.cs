@@ -15,10 +15,11 @@ namespace AddressBookProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select 1: For Creating Contact\n" +
+                Console.WriteLine("Select 1: For Creating New Contact\n" +
                     "Select 2:Edit Existing Contact\n"+
                     "Select 3:To Delete Contact\n"+
-                    "Select 4:To Display\n");
+                    "Select 4:To Display\n"+
+                    "Select 5: To Stop Program");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,9 +34,7 @@ namespace AddressBookProgram
                         break;
                     case 3:
                         Console.WriteLine("enter Name To Delete");
-                        //name=Console.ReadLine();
                         addressbook.DeleteContact();
-                        //addressbook.Display();
                         break;
                     case 4:
                         addressbook.Display();

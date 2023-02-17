@@ -12,6 +12,7 @@ namespace AddressBookProgram
         List<Contact> contactList = new List<Contact>();
         public void CreatContact()
         {
+            Contact contact= new Contact();
             Console.WriteLine("Enter the First Name");
             contact.FirstName = Console.ReadLine();
             Console.WriteLine("Enter the Last Name");
